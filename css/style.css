@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*  navigation style */
+.search-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+nav {
+  margin: 0px auto;
+  width: 90%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  padding: 0.8rem 2rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  background-color: forestgreen;
+  color: white;
+}
+nav .links {
+  display: flex;
+  width: 20rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo p {
+  font-size: 2rem;
+}
+.logo p::first-letter {
+  font-size: 2.5rem;
+  color: forestgreen;
+}
+
+.logo img {
+  max-width: 3rem;
+}
