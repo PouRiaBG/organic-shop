@@ -35,6 +35,9 @@ body {
   background-color: forestgreen;
   color: white;
 }
+#nav a {
+  text-decoration: none;
+}
 #nav .links {
   display: flex;
   width: 20rem;
