@@ -1,6 +1,13 @@
+:root {
+  --bg-color: white;
+}
+:root .dark-theme {
+  --bg-color: black;
+}
 body {
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-color);
 }
 /*  navigation style */
 .search-icon {
@@ -43,6 +50,30 @@ body {
   width: 20rem;
   align-items: center;
   justify-content: space-between;
+}
+.toggle-container {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+}
+.toggle-container input[type="checkbox"] {
+  appearance: none;
+  width: inherit;
+  height: inherit;
+  background: black;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.toggle-container input[type="checkbox"]::after {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 2rem;
+  height: inherit;
+  content: "";
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 5rem;
 }
 .logo {
   display: flex;
