@@ -1,8 +1,16 @@
 :root {
   --bg-color: white;
+  --title-color: black;
+  --desc-color: black;
+  --bg-footer-color: #f7faf8;
+  --bg-toggle-color: black;
 }
 :root .dark-theme {
   --bg-color: black;
+  --title-color: white;
+  --desc-color: #ababab;
+  --bg-footer-color: black;
+  --bg-toggle-color: white;
 }
 body {
   display: flex;
@@ -60,20 +68,25 @@ body {
   appearance: none;
   width: inherit;
   height: inherit;
-  background: black;
+  background: var(--bg-toggle-color);
   border-radius: 5rem;
   cursor: pointer;
 }
 .toggle-container input[type="checkbox"]::after {
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 4px;
+  left: 6px;
   width: 2rem;
-  height: inherit;
+  height: 1.9rem;
   content: "";
-  background-color: white;
-  border: 3px solid black;
+  background-color: var(--bg-color);
   border-radius: 5rem;
+}
+.dark-theme .toggle-container input[type="checkbox"]::after {
+  top: -7px;
+  left: 20px;
+  background-color: transparent;
+  box-shadow: 10px 10px black;
 }
 .logo {
   display: flex;
@@ -81,6 +94,7 @@ body {
 }
 .logo p {
   font-size: 2rem;
+  color: var(--title-color);
 }
 .logo p::first-letter {
   font-size: 2.5rem;
@@ -119,6 +133,7 @@ section {
 }
 #header aside h1 {
   font-size: 4rem;
+  color: var(--title-color);
 }
 #header aside p {
   color: #ababab;
@@ -150,6 +165,7 @@ section {
 }
 #main .dish h1 {
   font-size: 4rem;
+  color: var(--title-color);
 }
 #main .dish p:nth-child(2) {
   color: #ababab;
@@ -174,11 +190,13 @@ section {
 }
 .card-container div h2 {
   font-size: 2rem;
+  color: var(--title-color);
 }
 .card-container div p {
   font-family: roboto-light;
   font-size: 1rem;
   line-height: 2rem;
+  color: var(--desc-color);
 }
 
 #main .tomato {
@@ -197,6 +215,7 @@ section {
 }
 .tomato aside h1 {
   font-size: 4rem;
+  color: var(--title-color);
 }
 .tomato aside button {
   background-color: #0f0f08;
@@ -267,7 +286,7 @@ section {
 /* start footer styles */
 
 #footer {
-  background-color: #f7faf8;
+  background-color: var(--bg-footer-color);
   height: 50vh;
   display: flex;
   align-items: center;
@@ -288,9 +307,11 @@ h4 {
   padding: 1rem;
 }
 #footer h4 {
+  color: var(--title-color);
   font-family: roboto-md;
 }
 #footer p {
+  color: var(--desc-color);
   cursor: pointer;
   font-family: roboto-light;
 }
