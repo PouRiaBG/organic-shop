@@ -249,7 +249,7 @@ section {
   height: 30rem;
   border-radius: 5rem;
   background-image: linear-gradient(#00000061, #0000009e),
-    url(../assets/images/signIn.jpg);
+    url(../assets/images/signIn.webp);
   background-size: cover;
 }
 #signIn div h1 {
