@@ -110,6 +110,7 @@ body {
   width: 90%;
   height: 80vh;
   display: flex;
+  animation: header-animation 800ms;
 }
 #header aside,
 section {
@@ -331,9 +332,28 @@ h4 {
   #header section {
     display: none;
   }
+  #main .tomato div {
+    display: none;
+  }
+  #main .tomato aside {
+    width: 100%;
+  }
+  #signIn div h1 {
+    font-size: 2rem;
+  }
 }
-@media (min-width: 320px) and (max-width: 480px) {
-  html {
-    font-size: 8px;
+
+/* animations */
+
+@keyframes header-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
   }
 }
