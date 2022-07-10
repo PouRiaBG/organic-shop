@@ -321,3 +321,19 @@ h4 {
   cursor: pointer;
   margin: 1rem;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  #header aside {
+    width: 100%;
+  }
+  #header section {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+}
