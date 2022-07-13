@@ -55,9 +55,17 @@ body {
 }
 #nav .links {
   display: flex;
-  width: 20rem;
+  width: 25rem;
   align-items: center;
   justify-content: space-between;
+}
+#nav .links ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+#nav .links ul li {
+  padding: 0px 1rem;
 }
 .toggle-container {
   position: relative;
@@ -179,6 +187,7 @@ section {
   width: 100%;
   margin: auto;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 #main .dish .card-container div {
   width: 20rem;
@@ -188,6 +197,7 @@ section {
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  padding: 2rem;
 }
 .card-container div h2 {
   font-size: 2rem;
@@ -326,9 +336,19 @@ h4 {
   html {
     font-size: 12px;
   }
+  #nav .links ul {
+    display: none;
+  }
+  #nav .links {
+    justify-content: flex-end;
+  }
   #header aside {
     width: 100%;
   }
+  #header aside h1 {
+    font-size: 3rem;
+  }
+
   #header section {
     display: none;
   }
@@ -338,8 +358,24 @@ h4 {
   #main .tomato aside {
     width: 100%;
   }
+  #main .tomato aside h1 {
+    font-size: 3rem;
+  }
+  #main .dish h1 {
+    font-size: 3rem;
+  }
+  #main .dish {
+    height: auto;
+  }
+
   #signIn div h1 {
     font-size: 2rem;
+  }
+  #footer section {
+    width: 100%;
+  }
+  #footer section:first-child {
+    display: none;
   }
 }
 
