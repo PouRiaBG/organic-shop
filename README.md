@@ -1,1 +1,1 @@
-# pure-template
+# Organic shop landing page
